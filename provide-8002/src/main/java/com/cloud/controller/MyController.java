@@ -15,7 +15,7 @@ public class MyController {
     @Autowired
     private MyService myService;
 
-    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    @RequestMapping(value = "/myController/list",method = RequestMethod.GET)
     public List<ListBean> list() {
         return myService.list();
     }

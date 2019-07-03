@@ -19,6 +19,7 @@
         <module>provide-8002</module>
         <module>provide-8003</module>
         <module>common</module>
+        <module>customer-feign</module>
     </modules>
 
     <dependencyManagement>
@@ -40,11 +41,6 @@
                 <version>Edgware.SR4</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>1.5.21.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -76,6 +72,16 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>1.0.31</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>1.5.6.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>springloaded</artifactId>
+                <version>1.2.6.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
